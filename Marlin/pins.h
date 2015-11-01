@@ -156,8 +156,8 @@
 #define HEATER_0_PIN       9
 #define HEATER_1_PIN       8 // 12
 #define HEATER_2_PIN       11 //-1 // 13
-#define TEMP_0_PIN         13 //D27   // MUST USE ANALOG INPUT NUMBERING NOT DIGITAL OUTPUT NUMBERING!!!!!!!!!
-#define TEMP_1_PIN         15 // 1
+#define TEMP_0_PIN         15 //D27   // MUST USE ANALOG INPUT NUMBERING NOT DIGITAL OUTPUT NUMBERING!!!!!!!!!
+#define TEMP_1_PIN         13 // 1
 #define TEMP_2_PIN         -1 // 2
 #define HEATER_BED_PIN     10 // 14/15
 #define TEMP_BED_PIN       14 // 1,2 or I2C
@@ -599,11 +599,16 @@
     #define X_MIN_PIN           3
     #define X_MAX_PIN           2
 
-    #define Y_STEP_PIN         60
-    #define Y_DIR_PIN          61
-    #define Y_ENABLE_PIN       56
+    //#define Y_STEP_PIN         60
+    //#define Y_DIR_PIN          61
+    //#define Y_ENABLE_PIN       56
     #define Y_MIN_PIN          14
     #define Y_MAX_PIN          15
+    
+    // move to E1
+    #define Y_STEP_PIN         36
+    #define Y_DIR_PIN          34
+   #define Y_ENABLE_PIN       30
 
     #define Z_STEP_PIN         46
     #define Z_DIR_PIN          48
@@ -623,9 +628,16 @@
     #define E0_DIR_PIN         28
     #define E0_ENABLE_PIN      24
 
-    #define E1_STEP_PIN        36
-    #define E1_DIR_PIN         34
-    #define E1_ENABLE_PIN      30
+    //#define E1_STEP_PIN        36
+    //#define E1_DIR_PIN         34
+    //#define E1_ENABLE_PIN      30
+
+
+
+//move to y
+    #define E1_STEP_PIN        60
+    #define E1_DIR_PIN         61
+    #define E1_ENABLE_PIN      56
 
 #if MB(RAMPS_13_EEB)  //FMM added for Filament Extruder
 #ifdef FILAMENT_SENSOR
@@ -705,8 +717,8 @@
     #define HEATER_2_PIN       -1
   #endif
 
-  #define TEMP_0_PIN         13   // ANALOG NUMBERING
-  #define TEMP_1_PIN         15   // ANALOG NUMBERING
+  #define TEMP_0_PIN         15   // ANALOG NUMBERING
+  #define TEMP_1_PIN         14   // ANALOG NUMBERING
   #if MB(AZTEEG_X3_PRO)
     #define TEMP_2_PIN         12   // ANALOG NUMBERING
     #define TEMP_3_PIN         11   // ANALOG NUMBERING
