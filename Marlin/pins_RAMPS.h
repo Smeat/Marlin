@@ -93,10 +93,10 @@
 #define X_ENABLE_PIN       38
 #define X_CS_PIN           53
 
-#define Y_STEP_PIN         60
-#define Y_DIR_PIN          61
-#define Y_ENABLE_PIN       56
-#define Y_CS_PIN           49
+#define E1_STEP_PIN         60
+#define E1_DIR_PIN          61
+#define E1_ENABLE_PIN       56
+#define E1_CS_PIN           49
 
 #define Z_STEP_PIN         46
 #define Z_DIR_PIN          48
@@ -108,16 +108,16 @@
 #define E0_ENABLE_PIN      24
 #define E0_CS_PIN          42
 
-#define E1_STEP_PIN        36
-#define E1_DIR_PIN         34
-#define E1_ENABLE_PIN      30
-#define E1_CS_PIN          44
+#define Y_STEP_PIN        36
+#define Y_DIR_PIN         34
+#define Y_ENABLE_PIN      30
+#define Y_CS_PIN          44
 
 //
 // Temperature Sensors
 //
-#define TEMP_0_PIN         13   // Analog Input
-#define TEMP_1_PIN         15   // Analog Input
+#define TEMP_0_PIN         15   // Analog Input
+#define TEMP_1_PIN         13   // Analog Input
 #define TEMP_BED_PIN       14   // Analog Input
 
 // SPI for Max6675 or Max31855 Thermocouple
